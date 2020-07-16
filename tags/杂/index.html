@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="竹间雅舍">
+    <meta name="keywords" content="标签: 杂, 竹间雅舍">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>竹间雅舍</title>
+    <title>标签: 杂 | 竹间雅舍</title>
     <link rel="icon" type="image/png" href="/myblog/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/myblog/libs/awesome/css/all.css">
@@ -282,63 +282,9 @@
 
 </header>
 
-    
-<style>
-    .carousel-control {
-        width: 45px;
-        height: 45px;
-        line-height: 55px;
-        border-radius: 45px;
-        background: transparent;
-        cursor: pointer;
-        z-index: 100;
-    }
-
-    #prev-cover {
-        position: absolute;
-        top: 48%;
-        left: 8px;
-    }
-
-    #next-cover {
-        position: absolute;
-        top: 48%;
-        right: 8px;;
-    }
-
-    #prev-cover i {
-        margin-right: 3px;
-    }
-
-    #next-cover i {
-        margin-left: 3px;
-    }
-
-    .carousel-control:hover {
-        background-color: rgba(0, 0, 0, .4);
-    }
-
-    .carousel-control i {
-        color: #fff;
-        font-size: 2.4rem;
-    }
-</style>
-
-
-
-<div class="carousel carousel-slider center index-cover" data-indicators="true" style="margin-top: -64px;">
-    
-        <div id="prev-cover" class="left waves-effect carousel-control">
-            <i class="icon fa fa-angle-left"></i>
-        </div>
-        <div id="next-cover" class="right waves-effect carousel-control">
-            <i class="icon fa fa-angle-right"></i>
-        </div>
-    
-
-    <div class="carousel-item red white-text bg-cover about-cover">
-        <div class="container">
-            <div class="row">
+    <div class="bg-cover pd-header about-cover">
+    <div class="container">
+    <div class="row">
     <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
         <div class="brand">
             <div class="title center-align">
@@ -375,232 +321,63 @@
 </script>
 
 
-
-            <div class="cover-btns">
-                <a href="#indexCard" class="waves-effect waves-light btn">
-                    <i class="fa fa-angle-double-down"></i>开始阅读
-                </a>
-
-                
-                    <a href="https://github.com/zhaogev5" class="waves-effect waves-light btn" target="_blank">
-                        <i class="fab fa-github-alt"></i>Github
-                    </a>
-                
-            </div>
-            <div class="cover-social-link">
-    <a href="https://github.com/zhaogev5" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
-        <i class="fab fa-github"></i>
-    </a>
-
-
-
-    <a href="mailto:zhaogev58798@gmail.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
-        <i class="fas fa-envelope-open"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1226844358" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1226844358" data-position="top" data-delay="50">
-        <i class="fab fa-qq"></i>
-    </a>
-
-
-
-
-
-
-
-</div>
-        </div>
     </div>
-
-    
-        
-
-        
-            
-            <div class="carousel-item amber white-text carousel-post bg-cover"
-                 style="background-image: url('/myblog/medias/featureimages/13.jpg');">
-                <div class="container">
-                    <div class="row">
-                        <div class="col s10 offset-s1">
-                            <div class="title center-align">第一篇博客</div>
-                            <div class="description center-align">
-                                
-                                    这是一篇新手向的博客搭建教学hexo的安装使用
-列表
-
-
-                                
-                            </div>
-                            <div class="cover-btns">
-                                <a href="/myblog/2020/07/15/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" class="waves-effect waves-light btn"
-                                   target="_blank">
-                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-    
 </div>
-
-<script>
-    $(function () {
-        let coverSlider = $('.carousel');
-
-        //用户触摸轮播自动 restartPlay 是否生效
-        let initUserPressedOrDraggedActive = false
-
-        //用户触摸轮播自动 restartPlay
-        function initUserPressedOrDragged(instance) {
-            setInterval(() => {
-                if (instance.pressed || instance.dragged) {
-                    // console.log('initUserPressedOrDragged: ',instance.pressed,instance.dragged)
-                    restartPlay()
-                }
-            }, 1000)
-        }
-
-        coverSlider.carousel({
-            duration: Number('120'),
-            fullWidth: true,
-            indicators: 'true' === 'true',
-            onCycleTo() {
-                if (!initUserPressedOrDraggedActive) {
-                    // console.log('initUserPressedOrDraggedActive')
-                    initUserPressedOrDragged(this)
-                    initUserPressedOrDraggedActive = true
-                }
-            },
-        })
-
-        let carouselIntervalId;
-        
-        // Loop to call the next cover article picture.
-        let autoCarousel = function () {
-            carouselIntervalId = setInterval(function () {
-                coverSlider.carousel('next');
-            }, 5000);
-        };
-        autoCarousel();
-        
-
-        function restartPlay() {
-            
-            clearInterval(carouselIntervalId);
-            autoCarousel();
-            
-        };
-
-        
-        // prev and next cover post.
-        $('#prev-cover').click(function () {
-            coverSlider.carousel('prev');
-            restartPlay();
-        });
-        $('#next-cover').click(function () {
-            coverSlider.carousel('next');
-            restartPlay();
-        });
-        
-    });
-</script>
-
-
 
 <main class="content">
 
     
-    <div id="indexCard" class="index-card">
-        <div class="container ">
-            <div class="card">
-                <div class="card-content">
-                    
-                        <div class="dream">
-    
-    <div class="title center-align">
-        <i class="far fa-lightbulb"></i>&nbsp;&nbsp;My Dream
-    </div>
-    
-    <div class="row">
-        <div class="col l8 offset-l2 m10 offset-m1 s10 offset-s1 center-align text">
-            做一个善良的人，做一个为他人着想的人，做一个懂得真心夸赞的人，做一个能照亮周围的人。
+
+<div id="tags" class="container chip-container">
+    <div class="card">
+        <div class="card-content">
+            <div class="tag-title center-align">
+                <i class="fas fa-tags"></i>&nbsp;&nbsp;文章标签
+            </div>
+            <div class="tag-chips">
+                
+                
+                <a href="/myblog/tags/%E6%96%B0%E6%89%8B%E5%90%91/" title="新手向: 2">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="新手向" style="background-color: #F9EBEA;">新手向
+                        <span class="tag-length">2</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/myblog/tags/%E6%9D%82/" title="杂: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-active "
+                            data-tagname="杂" style="background-color: #F5EEF8;">杂
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/myblog/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" title="博客搭建: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="博客搭建" style="background-color: #D5F5E3;">博客搭建
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+            </div>
         </div>
     </div>
 </div>
 
-                    
-
-                    
-
-                    
-
-                    
-                    <div id="recommend-sections" class="recommend">
-                        
-
-
-
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
     
 
-    
-
-    <!-- 所有文章卡片 -->
     <article id="articles" class="container articles">
-        <div class="row article-row">
+        <div class="row tags-posts">
             
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/myblog/2020/07/16/hello-world/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/myblog/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
-                            
-                            <span class="card-title">Hello World</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-16
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                chaos_v5
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
             
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
+            <div class="article tag-post col s12 m6 l4" data-tags="新手向, 杂" data-aos="fade-up">
                 <div class="card">
                     <a href="/myblog/2020/07/15/MarkDown%E4%BD%BF%E7%94%A8%E8%AF%AD%E6%B3%95/">
-                        <div class="card-image">
+                        <div class="card-image tag-image">
                             
                             
                             <img src="/myblog/medias/featureimages/8.jpg" class="responsive-img" alt="MarkDown使用语法">
@@ -608,16 +385,7 @@
                             <span class="card-title">MarkDown使用语法</span>
                         </div>
                     </a>
-
                     <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                MarkDown使用语法markdown是非常好用的文本编辑语法，学会md走遍天下都不怕。
-
-该篇转载自干货| Markdown基本语法，史上超全
-1. 标题只要在文字前面加#，即可把这段文字设置为标题。一个#是一级标题，二个#是二级标题，
-                            
-                        </div>
                         <div class="publish-info">
                             <span class="publish-date">
                                 <i class="far fa-clock fa-fw icon-date"></i>2020-07-15
@@ -627,193 +395,18 @@
                                 <i class="fas fa-bookmark fa-fw icon-category"></i>
                                 
                                 <a href="/myblog/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E5%B0%8F%E6%8A%80%E5%B7%A7/" class="post-category">
-                                    程序员小技巧
+                                程序员小技巧
                                 </a>
                                 
                                 
                             </span>
                         </div>
                     </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/myblog/tags/%E6%96%B0%E6%89%8B%E5%90%91/">
-                            <span class="chip bg-color">新手向</span>
-                        </a>
-                        
-                        <a href="/myblog/tags/%E6%9D%82/">
-                            <span class="chip bg-color">杂</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/myblog/2020/07/15/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/myblog/medias/featureimages/13.jpg" class="responsive-img" alt="第一篇博客">
-                            
-                            <span class="card-title">第一篇博客</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                这是一篇新手向的博客搭建教学hexo的安装使用
-列表
-
-
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-15
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/myblog/categories/%E5%8D%9A%E5%AE%A2/" class="post-category">
-                                    博客
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/myblog/tags/%E6%96%B0%E6%89%8B%E5%90%91/">
-                            <span class="chip bg-color">新手向</span>
-                        </a>
-                        
-                        <a href="/myblog/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
-                            <span class="chip bg-color">博客搭建</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/myblog/2020/07/15/page/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/myblog/medias/featureimages/23.jpg" class="responsive-img" alt="page">
-                            
-                            <span class="card-title">page</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-15
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                chaos_v5
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/myblog/2020/07/14/second/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/myblog/medias/featureimages/4.jpg" class="responsive-img" alt="second">
-                            
-                            <span class="card-title">second</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                我是大帅逼谁是大帅逼嗯哼？
-
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-14
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                chaos_v5
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/myblog/2020/07/14/first/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/myblog/medias/featureimages/1.jpg" class="responsive-img" alt="first&#39;">
-                            
-                            <span class="card-title">first&#39;</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-14
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                chaos_v5
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
                 </div>
             </div>
             
         </div>
     </article>
-
 </main>
 
 
