@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>新手向-博客教程</title>
+      <link href="/myblog/2020/08/16/%E6%96%B0%E6%89%8B%E5%90%91-%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/"/>
+      <url>/myblog/2020/08/16/%E6%96%B0%E6%89%8B%E5%90%91-%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>MarkDown使用语法</title>
+      <link href="/myblog/2020/07/16/MarkDown%E4%BD%BF%E7%94%A8%E8%AF%AD%E6%B3%95/"/>
+      <url>/myblog/2020/07/16/MarkDown%E4%BD%BF%E7%94%A8%E8%AF%AD%E6%B3%95/</url>
+      
+        <content type="html"><![CDATA[<h1 id="MarkDown使用语法"><a href="#MarkDown使用语法" class="headerlink" title="MarkDown使用语法"></a>MarkDown使用语法</h1><p>markdown是非常好用的文本编辑语法，学会md走遍天下都不怕。</p><a id="more"></a><p>该篇转载自<a href="https://mp.weixin.qq.com/s?src=11&timestamp=1582594766&ver=2179&signature=nPh4npG7JerzU-vWmVXmRYtDJe-mwyNBzL-3yODm5uYaT2ojxxGK2HuVbpKSds9Ju1mW*EN2w-9Vgj8jQSWDMVMUe39H7lSvziRlpLxxh2aBHTt1vYAVZQJPUdO23Tyd&new=1" target="_blank" rel="noopener">干货| Markdown基本语法，史上超全</a></p><h2 id="1-标题"><a href="#1-标题" class="headerlink" title="1. 标题"></a>1. 标题</h2><p>只要在文字前面加#，即可把这段文字设置为标题。<strong>一个#是一级标题，二个#是二级标题，以此类推。支持六级标题。</strong></p><blockquote><p>注：<strong>标准语法一般在#后跟个空格再写文字</strong>，虽然现在某些markdown编辑器不用空格也可以，但是最好还是按照标准语法来。比如Typora编辑器中不空格就不会生成标题的样式。</p></blockquote><p><strong>示例</strong></p><pre><code># 这是一级标题## 这是二级标题### 这是三级标题</code></pre><p>效果如下：<br><img src="https://cdn.nlark.com/yuque/0/2020/png/997936/1582594843730-55426391-924c-4e06-ae7d-0f542e85d92d.png#align=left&display=inline&height=183&originHeight=183&originWidth=807&size=0&status=done&style=none&width=807" alt=""></p><h2 id="2-字体样式"><a href="#2-字体样式" class="headerlink" title="2. 字体样式"></a>2. 字体样式</h2><p>在写具体内容的时候，可能需要对某些内容显示不一样的样式，以用于特别标注。那么Markdown支持以下四种样式：</p><ul><li><p>加粗  <strong>要加粗的文字左右分别用两个*号即可</strong></p></li><li><p>斜体  <strong>要倾斜的文字左右分别用一个*号即可</strong></p></li><li><p>斜体加粗  <strong>要倾斜和加粗的文字左右分别用三个*号即可</strong></p></li><li><p>删除线  <strong>要加删除线的文字左右分别用两个~号即可</strong></p></li></ul><p><strong>示例</strong></p><pre><code>**加粗效果***斜体效果****斜体加粗效果***~~删除效果~~</code></pre><p>效果如下：<br><strong>加粗效果</strong><br><em>斜体效果</em><br><strong><em>斜体加粗效果</em></strong><br><em>删除效果</em></p><h2 id="3-引用"><a href="#3-引用" class="headerlink" title="3. 引用"></a>3. 引用</h2><p>在需要设为引用的文字前面加上&gt;即可，引用也支持嵌套，如下：</p><ul><li><blockquote><p> 对应的是一级引用</p></blockquote></li><li><blockquote><blockquote><p>对应的是二级引用</p></blockquote></blockquote></li><li><p>以此类推</p></li></ul><p><strong>示例</strong></p><pre><code>&gt; 一级引用&gt;&gt; 二级引用&gt;&gt;&gt; 三级引用</code></pre><p>效果如下：</p><blockquote><p>一级引用<br>二级引用<br>三级引用</p></blockquote><h2 id="4-分割线"><a href="#4-分割线" class="headerlink" title="4. 分割线"></a>4. 分割线</h2><p>一行连用三个或者<strong>三个以上的星号*，减号-，或者下划线_</strong>，就可以表示分割线。<br><strong>示例</strong></p><pre><code>***---___</code></pre><p>可以看到效果是一样的，如下</p><hr><hr><hr><h2 id="5-图片插入"><a href="#5-图片插入" class="headerlink" title="5. 图片插入"></a>5. 图片插入</h2><p>在Markdown中插入图片的语法如下</p><pre><code>![Alt text](图片链接 &quot;optional title&quot;)Alt text：图片的Alt标签，用来描述图片的关键词，可以不写。最初的本意是当图片因为某种原因不能被显示时而出现的替代文字，后来又被用于SEO，可以方便搜索引擎根据Alt text里面的关键词搜索到图片。图片链接：可以是图片的本地地址或者是网址。&quot;optional title&quot;：鼠标悬置于图片上会出现的标题文字，可以不写。</code></pre><h3 id="5-1-超链接形式"><a href="#5-1-超链接形式" class="headerlink" title="5.1. 超链接形式"></a>5.1. 超链接形式</h3><p>只需要在基础语法的括号中填入图片的网络链接即可，现在已经有很多免费/收费图床和方便传图的小工具可选。<br><strong>示例</strong></p><pre><code>![](https://www.baidu.com/img/bd_logo1.png?where=super)</code></pre><p>效果如下<br><img src="https://cdn.nlark.com/yuque/0/2020/webp/997936/1582594843722-cb3852db-e735-4cac-a6bc-925584039805.webp#align=left&display=inline&height=258&originHeight=258&originWidth=540&size=0&status=done&style=none&width=540" alt=""></p><h3 id="5-2-本地图片"><a href="#5-2-本地图片" class="headerlink" title="5.2. 本地图片"></a>5.2. 本地图片</h3><p>只需要在基础语法的括号中填入图片的位置路径即可，支持绝对路径和相对路径。<br><strong>示例</strong></p><pre><code>![avatar](/home/picture/1.png)</code></pre><h3 id="5-3-把图片存入markdown文件"><a href="#5-3-把图片存入markdown文件" class="headerlink" title="5.3. 把图片存入markdown文件"></a>5.3. 把图片存入markdown文件</h3><p>用base64转码工具把图片转成一段字符串，然后把字符串填到基础格式中链接的那个位置。</p><pre><code>基础用法：![avatar](data:image/png;base64,iVBORw0......)这个时候会发现插入的这一长串字符串会把整个文章分割开，非常影响编写文章时的体验。如果能够把大段的base64字符串放在文章末尾，然后在文章中通过一个id来调用，文章就不会被分割的这么乱了。高级用法比如：![avatar][base64str][base64str]:data:image/png;base64,iVBORw0.....</code></pre><blockquote><p>这种方法作者没试过，也不推荐。</p></blockquote><h2 id="6-超链接"><a href="#6-超链接" class="headerlink" title="6. 超链接"></a>6. 超链接</h2><p>Markdown还支持超链接，语法格式如下：</p><pre><code>[超链接名](超链接地址 &quot;超链接title&quot;)title可加可不加</code></pre><p><strong>示例</strong></p><pre><code>[会蹦的小黑的博客](http://blog.dawnguo.cn)</code></pre><p>效果如下：<br>会蹦的小黑的博客<br><strong>Fun Tips</strong><br>上面语法中[]中的内容为超链接名，那么[]其实可以不用文字，可以换成一张图片，如下</p><pre><code>[![avatar](https://www.baidu.com/img/bd_logo1.png?where=super)](https://www.baidu.com)</code></pre><p>效果如下（微信公众号中暂不支持外部链接的跳转）：</p><p><img src="https://cdn.nlark.com/yuque/0/2020/webp/997936/1582594843723-15013c26-8745-40fc-8169-00bd575b3d8f.webp#align=left&display=inline&height=258&originHeight=258&originWidth=540&size=0&status=done&style=none&width=540" alt="">avatar</p><h2 id="7-代码块"><a href="#7-代码块" class="headerlink" title="7. 代码块"></a>7. 代码块</h2><p>Markdown最让人喜欢的一点就是支持代码高亮，并且支持数几十种语言的高亮，语法格式很简单，如下</p><ul><li><p><code>代码内容</code><br>适用场景是比如你需要在一段文字中加入一小行代码,那么在两个之间`插入代码即可。</p></li><li><pre class=" language-语言名"><code class="language-语言名">具体代码</code></pre><p>适用场景是单独的贴上一整段代码，那么在三个`之间插入代码即可。</p></li></ul><p><strong>单行示例</strong></p><pre><code>只需要运行这条命令`pip install ..`即可</code></pre><p>效果如下<br>只需要运行这条命令<code>pip install ..</code>即可<br><strong>多行示例</strong></p><pre><code>```pythonprint(&quot;markdown 真香!&quot;)print(&quot;会蹦的小黑 这个公众号真不错!&quot;)</code></pre><pre><code>效果如下</code></pre><p>print(“markdown 真香!”)<br>print(“会蹦的小黑 这个公众号真不错!”)</p><pre><code>## 8. 列表在阐述分点的时候使用列表的形式会更加直观，Markdown支持有序和无序两种列表形式### 8.1 有序列表在需要作为列表条目的文字前面加上数字和点，**并且点和后面的内容要有一个空格即可**，如`1. 列表条目`**示例**</code></pre><ol><li><p>会蹦的小黑 这个公众号不错!</p></li><li><p>会蹦的小黑 这个公众号不错!</p></li><li><p>会蹦的小黑 这个公众号不错!</p><pre><code>效果如下</code></pre></li><li><p>会蹦的小黑 这个公众号不错!</p></li><li><p>会蹦的小黑 这个公众号不错!</p></li><li><p>会蹦的小黑 这个公众号不错!</p></li></ol><h3 id="8-2-无序列表"><a href="#8-2-无序列表" class="headerlink" title="8.2 无序列表"></a>8.2 无序列表</h3><p>在需要作为列表条目的文字前面加上-+<em>这些符号中的任何一种，*</em>并且内容和符号之间要有一个空格<strong>，如<code>- 列表条目</code><br>**示例</strong></p><pre><code>- 会蹦的小黑 这个公众不错!+ 会蹦的小黑 这个公众不错!* 会蹦的小黑 这个公众不错!</code></pre><p>效果如下</p><ul><li><p>会蹦的小黑 这个公众不错!</p></li><li><p>会蹦的小黑 这个公众不错!</p></li><li><p>会蹦的小黑 这个公众不错!</p></li></ul><h2 id="9-表格"><a href="#9-表格" class="headerlink" title="9. 表格"></a>9. 表格</h2><p>Markdown还支持插入表格，语法如下</p><pre><code>|表头|表头|表头||-|:-:|-:||内容|内容|内容||内容|内容|内容|第二行分割表头和内容,同时也是表格居中居左居右的定义：-符号有一个就行，多个也可以，只有-符号的话默认是居左-符号两边加：表示文字居中-符号右边加：表示文字居右</code></pre><p><strong>示例</strong></p><pre><code>| 公众号 | 好感度 | 点赞数 | 好评数 || - | :-: | -: |:-|| 会蹦的小黑 | 99+ | 99+ | 99+ || 会蹦的小黑 | 99+ | 99+ | 99+ |</code></pre><p>效果如下：</p><table><thead><tr><th align="left">公众号</th><th align="center">好感度</th><th align="right">点赞数</th><th align="left">好评数</th></tr></thead><tbody><tr><td align="left">会蹦的小黑</td><td align="center">99+</td><td align="right">99+</td><td align="left">99+</td></tr><tr><td align="left">会蹦的小黑</td><td align="center">99+</td><td align="right">99+</td><td align="left">99+</td></tr></tbody></table>]]></content>
+      
+      
+      <categories>
+          
+          <category> 程序员小技巧 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 新手向 </tag>
+            
+            <tag> 杂 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>软件安利篇（一）</title>
+      <link href="/myblog/2020/07/16/%E8%BD%AF%E4%BB%B6%E5%AE%89%E5%88%A9%E7%AF%87%EF%BC%88%E4%B8%80%EF%BC%89/"/>
+      <url>/myblog/2020/07/16/%E8%BD%AF%E4%BB%B6%E5%AE%89%E5%88%A9%E7%AF%87%EF%BC%88%E4%B8%80%EF%BC%89/</url>
+      
+        <content type="html"><![CDATA[<h1 id="一些好用的软件网站推荐–软件篇"><a href="#一些好用的软件网站推荐–软件篇" class="headerlink" title="一些好用的软件网站推荐–软件篇"></a>一些好用的软件网站推荐–软件篇</h1><p>这一篇文章是我总结的生活学习娱乐方面一些好玩好用的软件推荐，都是一些比较精品的软件噢</p><h1 id="稍后阅读软件–必收"><a href="#稍后阅读软件–必收" class="headerlink" title="稍后阅读软件–必收"></a>稍后阅读软件–必收</h1><p>目前有手机版本和pc版本，强烈建议出ios版本。<br>在生活中总有一些碎片化阅读的文章，如微信的公众号，微博某些精品文章。<br>仅仅是收藏可能以后不会再看了，稍后读稍后读，就是稍后再也不读了。<br>必收就是这样一个比较好用的稍后阅读软件，我找过很多类似の软件，但是最好用的还是必收。<br>一方面他ui非常的简洁精美，另一方面真的不需要会员（当然如果一个月五块钱那种我还是会支持下）<br><img src="https://cdn.nlark.com/yuque/0/2020/png/997936/1591236750968-bb2e409b-3281-4281-ad2f-7da6a86fbdd0.png#align=left&display=inline&height=566&margin=%5Bobject%20Object%5D&name=image.png&originHeight=890&originWidth=1300&size=494657&status=done&style=none&width=827" alt="image.png"><br>这是电脑端的画面，但是手机端使用更多一些，也一样的精美。<br>下载到官网就可：<a href="https://bishouapp.com/" target="_blank" rel="noopener">必收</a></p><h1 id="无敌的桌面壁纸软件–wallpaper-engine"><a href="#无敌的桌面壁纸软件–wallpaper-engine" class="headerlink" title="无敌的桌面壁纸软件–wallpaper engine"></a>无敌的桌面壁纸软件–wallpaper engine</h1><p>这个就是大名鼎鼎的steam软件啦。<br>对于我这种对颜值有要求的同学来说一个好看的桌面必不可少。<br>想象以下，桌面可以运动，有音乐，甚至可以玩游戏，还可以吧。<br><img src="https://cdn.nlark.com/yuque/0/2020/png/997936/1591237131555-ab01ddff-2837-4d82-8e8d-4798ceb7afec.png#align=left&display=inline&height=1080&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1080&originWidth=1920&size=3138881&status=done&style=none&width=1920" alt="image.png"><br>这只是静态的噢，动态桌面真的很cooooool。<br><del>对了，打开18+选项就……</del></p><h1 id="视频播放–人人影视"><a href="#视频播放–人人影视" class="headerlink" title="视频播放–人人影视"></a>视频播放–人人影视</h1><p>这个软件貌似和人人视频不太相关，但是一些热门剧都会更新的，像我最喜欢的rick and morty<br><img src="https://cdn.nlark.com/yuque/0/2020/png/997936/1591237437793-e434330b-5907-41b8-9c9c-4a45de9ca2e2.png#align=left&display=inline&height=680&margin=%5Bobject%20Object%5D&name=image.png&originHeight=680&originWidth=1152&size=203677&status=done&style=none&width=1152" alt="image.png"><br>只要下载就能看，感觉是不是很棒，更新速度也蛮快，满分！</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 良心安利 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> -安利 -好用的软件 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>第一篇博客</title>
+      <link href="/myblog/2020/07/15/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
+      <url>/myblog/2020/07/15/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
+      
+        <content type="html"><![CDATA[<h1 id="新手向–博客搭建（一）"><a href="#新手向–博客搭建（一）" class="headerlink" title="新手向–博客搭建（一）"></a>新手向–博客搭建（一）</h1><p>这篇文章就向大家介绍以下完整的搭建博客设置图床的流程。</p><p>使用的工具有如下：</p><ul><li>PicGo–一款十分十分十分好用的图床工具</li><li>hexo–开源的博客开发框架，主题比较多</li><li>gitee–图床与<del>白嫖</del>服务器的地方</li><li>dnspod–可以买自己的域名与设置（可选）</li></ul><h2 id="hexo的安装使用"><a href="#hexo的安装使用" class="headerlink" title="hexo的安装使用"></a>hexo的安装使用</h2><p>hexo是一款十分好用的博客搭建的平台</p><p><img src="https://gitee.com/zhaogev5/pic_go/raw/master/image-20200810191809706.png" alt="image-20200810191809706"></p><p>像这样的网页，只需要稍微改一些参数就可以做到，可以说是非常的香了。</p><p>接下来介绍一下hexo的安装流程。</p><ol><li>安装npm，node.js的包管理工具，安装<a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">node.js</a>就会自动安装npm</li></ol><p>至于安装过程就直接按照流程走就行了，好像安装到系统盘更好一点。</p><ol start="2"><li>安装hexo</li></ol><pre class=" language-python"><code class="language-python">npm install <span class="token operator">-</span>g hexo</code></pre><p>npm如果慢的话可以切换阿里源（阿里牛皮！）</p><ol start="3"><li>初始化一个博客</li></ol><pre class=" language-shell"><code class="language-shell">hexo init</code></pre><p><img src="https://gitee.com/zhaogev5/pic_go/raw/master/image-20200816110130476.png" alt="image-20200816110130476"></p><ol start="4"><li>选择一个喜欢的主题</li></ol><p>这里我选择的是hexo-theme-matery，安装方法如下：</p><pre><code>git clone https://github.com/blinkfox/hexo-theme-matery.git</code></pre><p>然后就可以进行修改了，主要修改的是两个文件：</p><p>一个是主文件夹下的_config.yml，还有一个是主题文件下的config文件：</p><p><img src="https://gitee.com/zhaogev5/pic_go/raw/master/image-20200816111430982.png" alt="image-20200816111430982"></p><p>首先将主文件夹下的config进行修改，主题进行更换</p><p><img src="https://gitee.com/zhaogev5/pic_go/raw/master/image-20200816111731781.png" alt="image-20200816111731781"></p><ol start="5"><li>在本地查看博客</li></ol><pre><code>hexo g  #编译文件hexo s    #产生本地查看服务</code></pre><p><img src="https://gitee.com/zhaogev5/pic_go/raw/master/image-20200816105722715.png" alt="image-20200816105722715"></p><p>问题不大的话输入上面那个网址就可以看到默认的初始的博客界面了。</p><ol start="6"><li>写一篇博客</li></ol><pre><code>hexo new &lt;博客名字&gt;</code></pre><p><img src="https://gitee.com/zhaogev5/pic_go/raw/master/image-20200816112214921.png" alt="image-20200816112214921"></p><p>就可以在如图所示的路径文件夹里看到我们创建的markdown文件。</p><p><img src="https://gitee.com/zhaogev5/pic_go/raw/master/image-20200816112255882.png" alt="image-20200816112255882"></p><p>这样有一个好处就是生成的好处就是：</p><p><img src="https://gitee.com/zhaogev5/pic_go/raw/master/image-20200816112412699.png" alt="image-20200816112412699"></p><p>这两行就不用写了，hexo已经帮忙生成好了。</p><h2 id="gitee图床与服务器的搭建"><a href="#gitee图床与服务器的搭建" class="headerlink" title="gitee图床与服务器的搭建"></a>gitee图床与服务器的搭建</h2><p>​    首先建议先安装typora最新版，因为最新版支持picgo的在线上传功能，想象以下，你复制粘贴一个图片到markdown上就自动生成了图床，就很香。而这个免费图床就是在gitee上生成的，并且gitee还提供了个免费得到服务器，可以说把它榨干了。</p><p>​    为什么使用gitee呢？因为它在国内，速度放问肯定比github快。</p><p>​    </p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 博客 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 新手向 </tag>
+            
+            <tag> 博客搭建 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>

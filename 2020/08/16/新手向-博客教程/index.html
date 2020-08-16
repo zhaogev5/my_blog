@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="第一篇博客, 夜雨听蝉">
+    <meta name="keywords" content="新手向-博客教程, 夜雨听蝉">
     <meta name="description" content="君子心怀天下，不像器具那样，作用仅仅限于某一方面。器者，形也。有形即有度，有度必满盈。故君子之思不器，君子之行不器，君子之量不器。">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>第一篇博客 | 夜雨听蝉</title>
+    <title>新手向-博客教程 | 夜雨听蝉</title>
     <link rel="icon" type="image/png" href="/myblog/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/myblog/libs/awesome/css/all.css">
@@ -286,12 +286,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/myblog/medias/featureimages/13.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/myblog/medias/featureimages/15.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">第一篇博客</h1>
+                    <h1 class="description center-align post-title">新手向-博客教程</h1>
                 </div>
             </div>
         </div>
@@ -406,29 +406,12 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                    <div class="article-tag">
-                        
-                            <a href="/myblog/tags/%E6%96%B0%E6%89%8B%E5%90%91/">
-                                <span class="chip bg-color">新手向</span>
-                            </a>
-                        
-                            <a href="/myblog/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
-                                <span class="chip bg-color">博客搭建</span>
-                            </a>
-                        
-                    </div>
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
                     
                 </div>
                 <div class="col s5 right-align">
-                    
-                    <div class="post-cate">
-                        <i class="fas fa-bookmark fa-fw icon-category"></i>
-                        
-                            <a href="/myblog/categories/%E5%8D%9A%E5%AE%A2/" class="post-category">
-                                博客
-                            </a>
-                        
-                    </div>
                     
                 </div>
             </div>
@@ -437,7 +420,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-07-15
+                    2020-08-16
                 </div>
                 
 
@@ -453,60 +436,7 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="新手向–博客搭建（一）"><a href="#新手向–博客搭建（一）" class="headerlink" title="新手向–博客搭建（一）"></a>新手向–博客搭建（一）</h1><p>这篇文章就向大家介绍以下完整的搭建博客设置图床的流程。</p>
-<p>使用的工具有如下：</p>
-<ul>
-<li>PicGo–一款十分十分十分好用的图床工具</li>
-<li>hexo–开源的博客开发框架，主题比较多</li>
-<li>gitee–图床与<del>白嫖</del>服务器的地方</li>
-<li>dnspod–可以买自己的域名与设置（可选）</li>
-</ul>
-<h2 id="hexo的安装使用"><a href="#hexo的安装使用" class="headerlink" title="hexo的安装使用"></a>hexo的安装使用</h2><p>hexo是一款十分好用的博客搭建的平台</p>
-<p><img src="https://gitee.com/zhaogev5/pic_go/raw/master/image-20200810191809706.png" alt="image-20200810191809706"></p>
-<p>像这样的网页，只需要稍微改一些参数就可以做到，可以说是非常的香了。</p>
-<p>接下来介绍一下hexo的安装流程。</p>
-<ol>
-<li>安装npm，node.js的包管理工具，安装<a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">node.js</a>就会自动安装npm</li>
-</ol>
-<p>至于安装过程就直接按照流程走就行了，好像安装到系统盘更好一点。</p>
-<ol start="2">
-<li>安装hexo</li>
-</ol>
-<pre class=" language-python"><code class="language-python">npm install <span class="token operator">-</span>g hexo</code></pre>
-<p>npm如果慢的话可以切换阿里源（阿里牛皮！）</p>
-<ol start="3">
-<li>初始化一个博客</li>
-</ol>
-<pre class=" language-shell"><code class="language-shell">hexo init</code></pre>
-<p><img src="https://gitee.com/zhaogev5/pic_go/raw/master/image-20200816110130476.png" alt="image-20200816110130476"></p>
-<ol start="4">
-<li>选择一个喜欢的主题</li>
-</ol>
-<p>这里我选择的是hexo-theme-matery，安装方法如下：</p>
-<pre><code>git clone https://github.com/blinkfox/hexo-theme-matery.git</code></pre><p>然后就可以进行修改了，主要修改的是两个文件：</p>
-<p>一个是主文件夹下的_config.yml，还有一个是主题文件下的config文件：</p>
-<p><img src="https://gitee.com/zhaogev5/pic_go/raw/master/image-20200816111430982.png" alt="image-20200816111430982"></p>
-<p>首先将主文件夹下的config进行修改，主题进行更换</p>
-<p><img src="https://gitee.com/zhaogev5/pic_go/raw/master/image-20200816111731781.png" alt="image-20200816111731781"></p>
-<ol start="5">
-<li>在本地查看博客</li>
-</ol>
-<pre><code>hexo g  #编译文件
-hexo s    #产生本地查看服务</code></pre><p><img src="https://gitee.com/zhaogev5/pic_go/raw/master/image-20200816105722715.png" alt="image-20200816105722715"></p>
-<p>问题不大的话输入上面那个网址就可以看到默认的初始的博客界面了。</p>
-<ol start="6">
-<li>写一篇博客</li>
-</ol>
-<pre><code>hexo new &lt;博客名字&gt;</code></pre><p><img src="https://gitee.com/zhaogev5/pic_go/raw/master/image-20200816112214921.png" alt="image-20200816112214921"></p>
-<p>就可以在如图所示的路径文件夹里看到我们创建的markdown文件。</p>
-<p><img src="https://gitee.com/zhaogev5/pic_go/raw/master/image-20200816112255882.png" alt="image-20200816112255882"></p>
-<p>这样有一个好处就是生成的好处就是：</p>
-<p><img src="https://gitee.com/zhaogev5/pic_go/raw/master/image-20200816112412699.png" alt="image-20200816112412699"></p>
-<p>这两行就不用写了，hexo已经帮忙生成好了。</p>
-<h2 id="gitee图床与服务器的搭建"><a href="#gitee图床与服务器的搭建" class="headerlink" title="gitee图床与服务器的搭建"></a>gitee图床与服务器的搭建</h2><p>​    首先建议先安装typora最新版，因为最新版支持picgo的在线上传功能，想象以下，你复制粘贴一个图片到markdown上就自动生成了图床，就很香。而这个免费图床就是在gitee上生成的，并且gitee还提供了个免费得到服务器，可以说把它榨干了。</p>
-<p>​    为什么使用gitee呢？因为它在国内，速度放问肯定比github快。</p>
-<p>​    </p>
-
+                
             </div>
             <hr/>
 
@@ -531,7 +461,7 @@ hexo s    #产生本地查看服务</code></pre><p><img src="https://gitee.com/z
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://zhaogev5.gitee.io/myblog/myblog/2020/07/15/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">http://zhaogev5.gitee.io/myblog/myblog/2020/07/15/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</a>
+                    <a href="http://zhaogev5.gitee.io/myblog/myblog/2020/08/16/%E6%96%B0%E6%89%8B%E5%90%91-%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/">http://zhaogev5.gitee.io/myblog/myblog/2020/08/16/%E6%96%B0%E6%89%8B%E5%90%91-%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -568,15 +498,7 @@ hexo s    #产生本地查看服务</code></pre><p><img src="https://gitee.com/z
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            
-                                <a href="/myblog/tags/%E6%96%B0%E6%89%8B%E5%90%91/">
-                                    <span class="chip bg-color">新手向</span>
-                                </a>
-                            
-                                <a href="/myblog/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
-                                    <span class="chip bg-color">博客搭建</span>
-                                </a>
-                            
+                            <span class="chip bg-color">无标签</span>
                         </div>
                     
                 </div>
@@ -742,50 +664,39 @@ hexo s    #产生本地查看服务</code></pre><p><img src="https://gitee.com/z
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/myblog/2020/07/16/%E8%BD%AF%E4%BB%B6%E5%AE%89%E5%88%A9%E7%AF%87%EF%BC%88%E4%B8%80%EF%BC%89/">
+                <a href="/myblog/2020/08/16/%E6%96%B0%E6%89%8B%E5%90%91-%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/">
                     <div class="card-image">
                         
                         
-                        <img src="/myblog/medias/featureimages/15.jpg" class="responsive-img" alt="软件安利篇（一）">
+                        <img src="/myblog/medias/featureimages/15.jpg" class="responsive-img" alt="新手向-博客教程">
                         
-                        <span class="card-title">软件安利篇（一）</span>
+                        <span class="card-title">新手向-博客教程</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            一些好用的软件网站推荐–软件篇这一篇文章是我总结的生活学习娱乐方面一些好玩好用的软件推荐，都是一些比较精品的软件噢
-稍后阅读软件–必收目前有手机版本和pc版本，强烈建议出ios版本。在生活中总有一些碎片化阅读的文章，如微信的公众号，微博某些
+                            
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-07-16
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-08-16
+                            </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/myblog/categories/%E8%89%AF%E5%BF%83%E5%AE%89%E5%88%A9/" class="post-category">
-                                    良心安利
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            chaos_v5
                             
                         </span>
                     </div>
                 </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/myblog/tags/%E5%AE%89%E5%88%A9-%E5%A5%BD%E7%94%A8%E7%9A%84%E8%BD%AF%E4%BB%B6/">
-                        <span class="chip bg-color">-安利 -好用的软件</span>
-                    </a>
-                    
-                </div>
+
                 
             </div>
         </div>
@@ -793,47 +704,43 @@ hexo s    #产生本地查看服务</code></pre><p><img src="https://gitee.com/z
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/myblog/2020/07/15/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">
+                <a href="/myblog/2020/07/16/MarkDown%E4%BD%BF%E7%94%A8%E8%AF%AD%E6%B3%95/">
                     <div class="card-image">
                         
                         
-                        <img src="/myblog/medias/featureimages/13.jpg" class="responsive-img" alt="第一篇博客">
+                        <img src="/myblog/medias/featureimages/8.jpg" class="responsive-img" alt="MarkDown使用语法">
                         
-                        <span class="card-title">第一篇博客</span>
+                        <span class="card-title">MarkDown使用语法</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            新手向–博客搭建（一）这篇文章就向大家介绍以下完整的搭建博客设置图床的流程。
-使用的工具有如下：
+                            MarkDown使用语法markdown是非常好用的文本编辑语法，学会md走遍天下都不怕。
 
-PicGo–一款十分十分十分好用的图床工具
-hexo–开源的博客开发框架，主题比较多
-gitee–图床与白嫖服务器的地方
-dnspod–可以
+该篇转载自干货| Markdown基本语法，史上超全
+1. 标题只要在文字前面加#，即可把这段文字设置为标题。一个#是一级标题，二个#是二级标题，
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-15
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-16
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/myblog/categories/%E5%8D%9A%E5%AE%A2/" class="post-category">
-                                    博客
+                            <a href="/myblog/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E5%B0%8F%E6%8A%80%E5%B7%A7/" class="post-category">
+                                    程序员小技巧
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
@@ -841,8 +748,8 @@ dnspod–可以
                         <span class="chip bg-color">新手向</span>
                     </a>
                     
-                    <a href="/myblog/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
-                        <span class="chip bg-color">博客搭建</span>
+                    <a href="/myblog/tags/%E6%9D%82/">
+                        <span class="chip bg-color">杂</span>
                     </a>
                     
                 </div>
